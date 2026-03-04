@@ -1,0 +1,165 @@
+[debug] [2026-01-02T12:03:44.363Z] ----------------------------------------------------------------------
+[debug] [2026-01-02T12:03:44.365Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\LakhanSoni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2026-01-02T12:03:44.365Z] CLI Version:   15.1.0
+[debug] [2026-01-02T12:03:44.365Z] Platform:      win32
+[debug] [2026-01-02T12:03:44.365Z] Node Version:  v24.11.0
+[debug] [2026-01-02T12:03:44.365Z] Time:          Fri Jan 02 2026 16:03:44 GMT+0400 (Gulf Standard Time)
+[debug] [2026-01-02T12:03:44.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-02T12:03:46.028Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-02T12:03:46.029Z] > authorizing via signed-in user (lsoni680@gmail.com)
+[debug] [2026-01-02T12:03:46.029Z] [iam] checking project fitnova-485a4 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2026-01-02T12:03:46.030Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:46.030Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:46.031Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions [none]
+[debug] [2026-01-02T12:03:46.032Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions x-goog-quota-user=projects/fitnova-485a4
+[debug] [2026-01-02T12:03:46.032Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-02T12:03:47.627Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions 200
+[debug] [2026-01-02T12:03:47.627Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-02T12:03:47.628Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:47.628Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:47.628Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/fitnova-485a4/serviceAccounts/fitnova-485a4@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-01-02T12:03:47.628Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/fitnova-485a4/serviceAccounts/fitnova-485a4@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-01-02T12:03:49.149Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/fitnova-485a4/serviceAccounts/fitnova-485a4@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-01-02T12:03:49.150Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/fitnova-485a4/serviceAccounts/fitnova-485a4@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'fitnova-485a4'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[debug] [2026-01-02T12:03:53.632Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:53.633Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:53.633Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4 [none]
+[debug] [2026-01-02T12:03:55.196Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4 200
+[debug] [2026-01-02T12:03:55.196Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4 {"projectNumber":"135486198744","projectId":"fitnova-485a4","lifecycleState":"ACTIVE","name":"FitNova","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-11T12:12:39.909070Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2026-01-02T12:03:55.203Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:55.203Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:03:55.203Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fitnova-485a4/adminSdkConfig [none]
+[debug] [2026-01-02T12:03:55.805Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fitnova-485a4/adminSdkConfig 200
+[debug] [2026-01-02T12:03:55.805Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fitnova-485a4/adminSdkConfig {"projectId":"fitnova-485a4","storageBucket":"fitnova-485a4.firebasestorage.app"}
+[debug] [2026-01-02T12:03:55.812Z] Validating nodejs source
+[debug] [2026-01-02T12:03:57.480Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "private": true,
+  "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
+[debug] [2026-01-02T12:03:57.480Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[debug] [2026-01-02T12:03:57.489Z] Could not find functions.yaml. Must use http discovery
+[debug] [2026-01-02T12:03:57.505Z] Found firebase-functions binary at 'C:\Dev\FitNova\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8304
+
+[debug] [2026-01-02T12:03:58.533Z] Got response from /__/functions.yaml {"endpoints":{"analyzeFoodNutritionHttp":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"analyzeFoodNutritionHttp"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] i  extensions: ensuring required API firebaseextensions.googleapis.com is enabled... 
+[debug] [2026-01-02T12:04:02.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-02T12:04:02.586Z] > authorizing via signed-in user (lsoni680@gmail.com)
+[debug] [2026-01-02T12:04:02.586Z] [iam] checking project fitnova-485a4 for permissions ["firebase.projects.get","firebaseextensions.instances.list"]
+[debug] [2026-01-02T12:04:02.587Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:02.587Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:02.587Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions [none]
+[debug] [2026-01-02T12:04:02.588Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions x-goog-quota-user=projects/fitnova-485a4
+[debug] [2026-01-02T12:04:02.588Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2026-01-02T12:04:16.685Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions 200
+[debug] [2026-01-02T12:04:16.685Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions {"permissions":["firebase.projects.get","firebaseextensions.instances.list"]}
+[debug] [2026-01-02T12:04:16.686Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:16.686Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:16.690Z] >>> [apiv2][query] GET https://firebaseextensions.googleapis.com/v1beta/projects/fitnova-485a4/instances pageSize=100&pageToken=
+[debug] [2026-01-02T12:04:18.189Z] <<< [apiv2][status] GET https://firebaseextensions.googleapis.com/v1beta/projects/fitnova-485a4/instances 200
+[debug] [2026-01-02T12:04:18.189Z] <<< [apiv2][body] GET https://firebaseextensions.googleapis.com/v1beta/projects/fitnova-485a4/instances {}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged C:\Dev\FitNova\functions (42.64 KB) for uploading 
+[debug] [2026-01-02T12:04:18.220Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:18.220Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:18.220Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/fitnova-485a4/locations/-/functions [none]
+[debug] [2026-01-02T12:04:18.993Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/fitnova-485a4/locations/-/functions 200
+[debug] [2026-01-02T12:04:18.994Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/fitnova-485a4/locations/-/functions {}
+[debug] [2026-01-02T12:04:18.994Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:18.994Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:18.995Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/fitnova-485a4/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2026-01-02T12:04:20.018Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/fitnova-485a4/locations/-/functions 200
+[debug] [2026-01-02T12:04:20.019Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/fitnova-485a4/locations/-/functions {"functions":[{"name":"projects/fitnova-485a4/locations/us-central1/functions/analyzeFoodNutrition","buildConfig":{"build":"projects/135486198744/locations/us-central1/builds/d0458908-74d1-419a-aba8-a5c0846d9fea","runtime":"nodejs20","entryPoint":"analyzeFoodNutrition","source":{"storageSource":{"bucket":"gcf-v2-sources-135486198744-us-central1","object":"analyzeFoodNutrition/function-source.zip","generation":"1767353606105764"}},"environmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""},"dockerRepository":"projects/fitnova-485a4/locations/us-central1/repositories/gcf-artifacts","sourceProvenance":{"resolvedStorageSource":{"bucket":"gcf-v2-sources-135486198744-us-central1","object":"analyzeFoodNutrition/function-source.zip","generation":"1767353606105764"}},"dockerRegistry":"ARTIFACT_REGISTRY","serviceAccount":"projects/fitnova-485a4/serviceAccounts/135486198744-compute@developer.gserviceaccount.com","automaticUpdatePolicy":{}},"serviceConfig":{"service":"projects/fitnova-485a4/locations/us-central1/services/analyzefoodnutrition","timeoutSeconds":60,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"fitnova-485a4\",\"storageBucket\":\"fitnova-485a4.firebasestorage.app\"}","GCLOUD_PROJECT":"fitnova-485a4","EVENTARC_CLOUD_EVENT_SOURCE":"projects/fitnova-485a4/locations/us-central1/services/analyzeFoodNutrition","FUNCTION_TARGET":"analyzeFoodNutrition","LOG_EXECUTION_ID":"true"},"maxInstanceCount":10,"ingressSettings":"ALLOW_ALL","uri":"https://analyzefoodnutrition-zridd3wcvq-uc.a.run.app","serviceAccountEmail":"135486198744-compute@developer.gserviceaccount.com","availableMemory":"256Mi","allTrafficOnLatestRevision":true,"revision":"analyzefoodnutrition-00003-duv","maxInstanceRequestConcurrency":80,"availableCpu":"1"},"state":"ACTIVE","updateTime":"2026-01-02T11:34:22.174423567Z","labels":{"firebase-functions-hash":"03f9f1e071c99a2458907eca39b035a0eb7e942d","deployment-tool":"cli-firebase","deployment-callable":"true"},"environment":"GEN_2","url":"https://us-central1-fitnova-485a4.cloudfunctions.net/analyzeFoodNutrition","createTime":"2026-01-02T10:15:42.687079601Z","satisfiesPzi":true}]}
+[info] i  functions: ensuring required API run.googleapis.com is enabled... 
+[info] i  functions: ensuring required API eventarc.googleapis.com is enabled... 
+[info] i  functions: ensuring required API pubsub.googleapis.com is enabled... 
+[info] i  functions: ensuring required API storage.googleapis.com is enabled... 
+[info] i  functions: generating the service identity for pubsub.googleapis.com... 
+[debug] [2026-01-02T12:04:20.023Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:20.023Z] Checked if tokens are valid: true, expires at: 1767357178748
+[info] i  functions: generating the service identity for eventarc.googleapis.com... 
+[debug] [2026-01-02T12:04:20.023Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:20.023Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:20.023Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/pubsub.googleapis.com:generateServiceIdentity [none]
+[debug] [2026-01-02T12:04:20.023Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/pubsub.googleapis.com:generateServiceIdentity x-goog-quota-user=projects/135486198744
+[debug] [2026-01-02T12:04:20.023Z] >>> [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/pubsub.googleapis.com:generateServiceIdentity {}
+[debug] [2026-01-02T12:04:20.025Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/eventarc.googleapis.com:generateServiceIdentity [none]
+[debug] [2026-01-02T12:04:20.025Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/eventarc.googleapis.com:generateServiceIdentity x-goog-quota-user=projects/135486198744
+[debug] [2026-01-02T12:04:20.025Z] >>> [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/eventarc.googleapis.com:generateServiceIdentity {}
+[debug] [2026-01-02T12:04:21.565Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/eventarc.googleapis.com:generateServiceIdentity 200
+[debug] [2026-01-02T12:04:21.565Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/eventarc.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-135486198744@gcp-sa-eventarc.iam.gserviceaccount.com","uniqueId":"108163406767208485060"}}
+[debug] [2026-01-02T12:04:21.648Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/pubsub.googleapis.com:generateServiceIdentity 200
+[debug] [2026-01-02T12:04:21.649Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1beta1/projects/135486198744/services/pubsub.googleapis.com:generateServiceIdentity {"name":"operations/finished.DONE_OPERATION","done":true,"response":{"@type":"type.googleapis.com/google.api.serviceusage.v1beta1.ServiceIdentity","email":"service-135486198744@gcp-sa-pubsub.iam.gserviceaccount.com","uniqueId":"104170079749932940867"}}
+[debug] [2026-01-02T12:04:21.650Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:21.650Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:21.650Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4 [none]
+[debug] [2026-01-02T12:04:21.929Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4 200
+[debug] [2026-01-02T12:04:21.930Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4 {"projectNumber":"135486198744","projectId":"fitnova-485a4","lifecycleState":"ACTIVE","name":"FitNova","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-12-11T12:12:39.909070Z"}
+[debug] [2026-01-02T12:04:21.930Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:21.930Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:21.930Z] >>> [apiv2][query] GET https://compute.googleapis.com/compute/v1/projects/135486198744 [none]
+[debug] [2026-01-02T12:04:22.369Z] <<< [apiv2][status] GET https://compute.googleapis.com/compute/v1/projects/135486198744 403
+[debug] [2026-01-02T12:04:22.369Z] <<< [apiv2][body] GET https://compute.googleapis.com/compute/v1/projects/135486198744 {"error":{"code":403,"message":"Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","errors":[{"message":"Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","domain":"usageLimits","reason":"accessNotConfigured","extendedHelp":"https://console.developers.google.com"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"consumer":"projects/135486198744","service":"compute.googleapis.com","containerInfo":"135486198744","activationUrl":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744","serviceTitle":"Compute Engine API"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744"}]}]}}
+[debug] [2026-01-02T12:04:22.370Z] unable to look up default compute service account. Falling back to 135486198744-compute@developer.gserviceaccount.com. Error: {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","errors":[{"message":"Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","domain":"usageLimits","reason":"accessNotConfigured","extendedHelp":"https://console.developers.google.com"}],"status":"PERMISSION_DENIED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"SERVICE_DISABLED","domain":"googleapis.com","metadata":{"consumer":"projects/135486198744","service":"compute.googleapis.com","containerInfo":"135486198744","activationUrl":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744","serviceTitle":"Compute Engine API"}},{"@type":"type.googleapis.com/google.rpc.LocalizedMessage","locale":"en-US","message":"Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Google developers console API activation","url":"https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744"}]}]}},"response":{"statusCode":403}},"exit":1,"message":"Request to https://compute.googleapis.com/compute/v1/projects/135486198744 had HTTP Error: 403, Compute Engine API has not been used in project 135486198744 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=135486198744 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.","status":403}
+[debug] [2026-01-02T12:04:22.371Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:22.371Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:22.371Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/fitnova-485a4/billingInfo [none]
+[debug] [2026-01-02T12:04:23.249Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/fitnova-485a4/billingInfo 200
+[debug] [2026-01-02T12:04:23.250Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/fitnova-485a4/billingInfo {"name":"projects/fitnova-485a4/billingInfo","projectId":"fitnova-485a4","billingAccountName":"billingAccounts/014D59-0BD597-8A1D1C","billingEnabled":true}
+[debug] [2026-01-02T12:04:23.250Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2026-01-02T12:04:23.250Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:23.250Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:23.250Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions [none]
+[debug] [2026-01-02T12:04:23.250Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions x-goog-quota-user=projects/fitnova-485a4
+[debug] [2026-01-02T12:04:23.250Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2026-01-02T12:04:23.498Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions 200
+[debug] [2026-01-02T12:04:23.498Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fitnova-485a4:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2026-01-02T12:04:23.498Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2026-01-02T12:04:23.498Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:23.498Z] Checked if tokens are valid: true, expires at: 1767357178748
+[debug] [2026-01-02T12:04:23.499Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v2/projects/fitnova-485a4/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2026-01-02T12:04:24.352Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v2/projects/fitnova-485a4/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2026-01-02T12:04:24.352Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v2/projects/fitnova-485a4/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/gcf-v2-uploads-135486198744.us-central1.cloudfunctions.appspot.com/f4ff7fa6-2ebb-4315-864b-89245fe5a4b7.zip?GoogleAccessId=service-135486198744@gcf-admin-robot.iam.gserviceaccount.com&Expires=1767357264&Signature=CB26a3azIanfb54Gs77EFHIubNCaJpXjGsJSDuX87UhwwOiMkd7HVAo9FvtylJZBVPDAdVg7jQ4gEVFSoN83HidHXXc5mytmvD4%2BZ84jzmhHIRBIWKfdJLutUXqOlMgIVFk6X3iD739zNd0pUq%2B0mr6nsaa1q51xNC409b%2FN8lEQyCeFMhlY9IwPeTzajAXgcuWTPY2SHFxpo7Lsk1ToUsp5xozgU9aeYAeem2qo8TgKDxYW%2FDhiVqrm8xZzeyM8dE3WgdX5br5MNO3Sv3tKykR3HR2VtSpYQF%2BhOKtdAjapM8f4QJO41%2B3K5zVpCUdmhQv4Ty52l%2BUMQzjN8PHR%2BA%3D%3D","storageSource":{"bucket":"gcf-v2-uploads-135486198744.us-central1.cloudfunctions.appspot.com","object":"f4ff7fa6-2ebb-4315-864b-89245fe5a4b7.zip"}}
+[debug] [2026-01-02T12:04:24.352Z] >>> [apiv2][query] PUT https://storage.googleapis.com/gcf-v2-uploads-135486198744.us-central1.cloudfunctions.appspot.com/f4ff7fa6-2ebb-4315-864b-89245fe5a4b7.zip GoogleAccessId=service-135486198744%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1767357264&Signature=CB26a3azIanfb54Gs77EFHIubNCaJpXjGsJSDuX87UhwwOiMkd7HVAo9FvtylJZBVPDAdVg7jQ4gEVFSoN83HidHXXc5mytmvD4%2BZ84jzmhHIRBIWKfdJLutUXqOlMgIVFk6X3iD739zNd0pUq%2B0mr6nsaa1q51xNC409b%2FN8lEQyCeFMhlY9IwPeTzajAXgcuWTPY2SHFxpo7Lsk1ToUsp5xozgU9aeYAeem2qo8TgKDxYW%2FDhiVqrm8xZzeyM8dE3WgdX5br5MNO3Sv3tKykR3HR2VtSpYQF%2BhOKtdAjapM8f4QJO41%2B3K5zVpCUdmhQv4Ty52l%2BUMQzjN8PHR%2BA%3D%3D
+[debug] [2026-01-02T12:04:24.353Z] >>> [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-135486198744.us-central1.cloudfunctions.appspot.com/f4ff7fa6-2ebb-4315-864b-89245fe5a4b7.zip [stream]
+[debug] [2026-01-02T12:04:25.089Z] <<< [apiv2][status] PUT https://storage.googleapis.com/gcf-v2-uploads-135486198744.us-central1.cloudfunctions.appspot.com/f4ff7fa6-2ebb-4315-864b-89245fe5a4b7.zip 200
+[debug] [2026-01-02T12:04:25.090Z] <<< [apiv2][body] PUT https://storage.googleapis.com/gcf-v2-uploads-135486198744.us-central1.cloudfunctions.appspot.com/f4ff7fa6-2ebb-4315-864b-89245fe5a4b7.zip [omitted]
+[info] +  functions: functions source uploaded successfully 
+[info] 
+The following functions are found in your project but do not exist in your local source code:
+	analyzeFoodNutrition(us-central1)
+
+If you are renaming a function or changing its region, it is recommended that you create the new function first before deleting the old one to prevent event loss. For more info, visit https://firebase.google.com/docs/functions/manage-functions#modify
+

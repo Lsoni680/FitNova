@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "135486198744",
+    "project_id": "fitnova-485a4",
+    "storage_bucket": "fitnova-485a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135486198744:android:f63848d13e337387d718ad",
+        "android_client_info": {
+          "package_name": "com.lsoni680.fitnova"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135486198744-qhru4ngft0im6rofntpqp8scieqf1jf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lsoni680.fitnova",
+            "certificate_hash": "1f0d0ec8df3bb54b00ac3017c3a451e80a76cfac"
+          }
+        },
+        {
+          "client_id": "135486198744-ags5tloj3agkaddpn97j8lsuqnkgv8t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBslzGwUIi1MkS7pHznfMsMV9J6oceo52E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135486198744-ags5tloj3agkaddpn97j8lsuqnkgv8t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

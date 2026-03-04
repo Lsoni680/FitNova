@@ -1,0 +1,23 @@
+@echo off
+cd /d "C:\Users\LakhanSoni\NutriScan"
+
+echo ============================================
+echo 🚀  Pushing latest changes to GitHub...
+echo ============================================
+
+:: Add all new / changed files
+git add .
+
+:: Create a commit message with current date & time
+for /f "tokens=1-3 delims=/ " %%a in ('date /t') do set today=%%a-%%b-%%c
+for /f "tokens=1 delims=:" %%a in ("%time%") do set hour=%%a
+git commit -m "Auto update on %today% at %hour%h"
+
+:: Push to your main branch
+git push origin main
+
+echo ============================================
+echo ✅  Push complete! Check GitHub: 
+echo    https://github.com/Lsoni680/NutriScan
+echo ============================================
+pause

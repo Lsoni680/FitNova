@@ -1,0 +1,14 @@
+@echo off
+cd /d "C:\Users\LakhanSoni\NutriScan"
+
+echo ============================================
+echo 🔄  Pulling latest updates from GitHub...
+echo ============================================
+
+:: Fetch and merge latest changes
+git pull origin main
+
+echo ============================================
+echo ✅  Pull complete! Local project is up to date.
+echo ============================================
+pause
