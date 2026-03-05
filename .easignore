@@ -12,7 +12,6 @@ Thumbs.db
 *.pem
 *.p12
 *.mobileprovision
-google-services.json
 GoogleService-Info.plist
 .idea/
 .vscode/
