@@ -4,11 +4,11 @@ export default {
   expo: {
     name: "FitNova",
     slug: "fitnova",
-    version: "1.0.1",
+    version: "1.0.8",
 
     android: {
       package: "com.lsoni680.fitnova",
-      versionCode: 4, // 🔥 increase version
+      versionCode: 10, // 🔥 increase version
 
       permissions: [
         "READ_MEDIA_IMAGES",

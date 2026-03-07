@@ -3,7 +3,7 @@
 // FitNova - OpenAI via Firebase Gen-2 apiGateway (HTTP)
 // ========================================================
 
-const API_URL = "https://apigateway-zridd3wcvq-uc.a.run.app";
+const API_URL = "https://us-central1-fitnova-485a4.cloudfunctions.net/apiGateway";
 
 export async function testOpenAI() {
   const res = await fetch(API_URL, {
